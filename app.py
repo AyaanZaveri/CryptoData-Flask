@@ -30,6 +30,9 @@ def process():
       'class': 'sc-AxhUy ghbWav converter-item-name'
   }).text
   
+  cryptoicon = soup.find('img', {
+    'class': 'sc-pkhIR hgECfS'
+  })['src']
 
   cryptoval = soup.find('div', {'class':   'priceValue___11gHJ'}).text  
 
@@ -38,6 +41,8 @@ def process():
   print(cryptoname + ': ' + cryptostrip + ' USD')
 
   name.title()
+
+  print(cryptoicon)
 
   return render_template('index.html', data=cryptostrip, name=name.title())
   
