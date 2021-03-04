@@ -6,6 +6,9 @@ from bs4 import BeautifulSoup
 app = Flask(__name__)
 app.secret_key = "asdf"
 
+if __name__ == "__main__":
+    app.run()
+
 @app.route('/', methods=['GET','POST'])
 
 def process():
@@ -34,6 +37,9 @@ def process():
 
   print(cryptoname + ': ' + cryptostrip + ' USD')
 
+  name.title()
+
   return render_template('index.html', data=cryptostrip, name=name)
   
-app.run(host='0.0.0.0', port=80)
+if __name__ == '__main__':
+  app.run(host="0.0.0.0", threaded=True, port=5000)
