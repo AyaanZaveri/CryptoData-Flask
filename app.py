@@ -15,6 +15,9 @@ def process():
   name = request.form.get('name','')
   session['name'] = name.title()
 
+  name.replace(' ', '-')
+  print(name)
+
   if name == '':
       name = 'bitcoin'.title()
 
