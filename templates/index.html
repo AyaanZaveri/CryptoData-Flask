@@ -39,25 +39,24 @@
       }
 	    
       input {
-        font-size: 28px;
+        font-size: 17px;
         font-family: 'Jost', sans-serif;
-        width: 200px;
-        height: 70px;
+        width: 220px;
+        height: 25px;
         outline: none;
         border: 4px solid black;
         border-radius: 10px;
-        background-color: #4158D0;
-        background-color: #FBAB7E;
-        background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
         transition: width 1s;
         margin-top: 20px;
+        color: black;
+        text-align: center;
       }
     </style>
 	</head>
 	<body>
 
     <form action="/" method="POST">
-      <input type="text" name="name" placeholder="Name">
+      <input type="text" name="name" placeholder="Crypto" autocomplete="off">
 			<button type="submit" onclick="process()">Pick Crypto</button>
       <h1>{{ name }}: {{ data }}</h1>
       </form>
