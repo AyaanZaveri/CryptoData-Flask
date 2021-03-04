@@ -12,8 +12,7 @@ if __name__ == "__main__":
 @app.route('/', methods=['GET','POST'])
 
 def process():
-  name = request.form.get('name','')
-  name.replace(' ', '-')
+  name = request.form.get('name','').replace(' ', '-')
   session['name'] = name.title()
 
   name.replace(' ', '-')
