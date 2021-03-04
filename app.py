@@ -18,7 +18,7 @@ def process():
   if name == '':
       name = 'bitcoin'.title()
 
-  url = "https://coinmarketcap.com/currencies/" + name
+  url = "https://coinmarketcap.com/currencies/" + name.title()
 
   print(url)
 
