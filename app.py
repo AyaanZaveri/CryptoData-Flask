@@ -44,7 +44,7 @@ def process():
 
   print(cryptoicon)
 
-  return render_template('index.html', data=cryptostrip, name=name.title())
+  return render_template('index.html', data=cryptostrip, name=name.title(), icon=cryptoicon)
   
 if __name__ == '__main__':
   app.run(host="0.0.0.0", threaded=True, port=5000)
