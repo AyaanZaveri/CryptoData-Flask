@@ -36,4 +36,4 @@ def process():
 
   return render_template('index.html', data=cryptostrip, name=name)
   
-web_site.run(host='0.0.0.0', port=5000)
+web_site.run(host='0.0.0.0', port=80)
