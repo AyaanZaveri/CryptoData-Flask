@@ -15,7 +15,7 @@ def process():
   name = request.form.get('name','').replace(' ', '-')
   session['name'] = name.title()
 
-  name.replace(' ', '-')
+  name.replace(' ', '-') 
   print(name)
 
   if name == '':
