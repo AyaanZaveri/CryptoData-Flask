@@ -13,6 +13,7 @@ if __name__ == "__main__":
 
 def process():
   name = request.form.get('name','')
+  name.replace(' ', '-')
   session['name'] = name.title()
 
   name.replace(' ', '-')
