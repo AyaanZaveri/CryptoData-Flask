@@ -34,7 +34,7 @@ def process():
   }).text
   
   cryptoicon = soup.find('img', {
-    'class': 'sc-pkhIR hgECfS'
+    'class': 'sc-1pzgnut-2 czMuSK'
   })['src']
 
   cryptoval = soup.find('div', {'class':   'priceValue___11gHJ'}).text  
