@@ -30,7 +30,7 @@ def process():
   soup = BeautifulSoup(r.text, 'html.parser')  
 
   cryptoname = soup.find('p', {
-      'class': 'sc-AxhUy ghbWav converter-item-name'
+      'class': 'sc-1eb5slv-0 hNpJqV converter-item-name'
   }).text
   
   cryptoicon = soup.find('img', {
