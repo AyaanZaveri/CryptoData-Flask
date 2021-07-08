@@ -15,4 +15,4 @@ install:
   - pip install speedtest-cli
 # command to run tests
 script:
-  - pytest
+  - speedtest
